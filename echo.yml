@@ -1,0 +1,11 @@
+desc: echo current date
+steps:
+  prepareDate:
+    desc: prepare date
+    exec:
+      command: date +%Y-%m-%d | tr -d '\n'
+    bind:
+      today_full: current.stdout
+  dumpDate:
+    desc: echo date
+    dump: today_full
