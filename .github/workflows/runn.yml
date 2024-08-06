@@ -10,6 +10,6 @@ jobs:
       - uses: k2tzumi/runn-action@latest
         with:
           command: run
-          path_pattern: *.yml
+          path_pattern: '*.yml'
           verbose: true
           enable-run-exec-scope: true
